@@ -1,0 +1,181 @@
+{
+  "asset": {
+    "generator": "BabylonJS",
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "byteLength": 960,
+      "uri": "test.bin"
+    }
+  ],
+  "nodes": [
+    {
+      "name": "box",
+      "translation": [
+        0,
+        0.8248,
+        0
+      ],
+      "mesh": 0
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3
+        }
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "scene": 0,
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 288,
+      "name": "position - box",
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteLength": 288,
+      "byteOffset": 288,
+      "name": "normal - box",
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteLength": 192,
+      "byteOffset": 576,
+      "name": "uv - box",
+      "byteStride": 8
+    },
+    {
+      "buffer": 0,
+      "byteLength": 144,
+      "byteOffset": 768,
+      "name": "Indices - box"
+    },
+    {
+      "buffer": 0,
+      "byteLength": 12,
+      "byteOffset": 912,
+      "name": "boxAnimation_translation  keyframe data view"
+    },
+    {
+      "buffer": 0,
+      "byteLength": 36,
+      "byteOffset": 924,
+      "name": "boxAnimation_translation  data view"
+    }
+  ],
+  "accessors": [
+    {
+      "name": "position - box",
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 24,
+      "type": "VEC3",
+      "min": [
+        -0.5,
+        -0.5,
+        -0.5
+      ],
+      "max": [
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "name": "normal - box",
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 24,
+      "type": "VEC3"
+    },
+    {
+      "name": "uv - box",
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 24,
+      "type": "VEC2"
+    },
+    {
+      "name": "indices - box",
+      "bufferView": 3,
+      "componentType": 5125,
+      "count": 36,
+      "type": "SCALAR"
+    },
+    {
+      "name": "boxAnimation_translation  keyframes",
+      "bufferView": 4,
+      "componentType": 5126,
+      "count": 3,
+      "type": "SCALAR",
+      "min": [
+        0
+      ],
+      "max": [
+        1.3333333730697632
+      ]
+    },
+    {
+      "name": "boxAnimation_translation  data",
+      "bufferView": 5,
+      "componentType": 5126,
+      "count": 3,
+      "type": "VEC3"
+    }
+  ],
+  "animations": [
+    {
+      "name": "boxAnimation_translation",
+      "samplers": [
+        {
+          "interpolation": "LINEAR",
+          "input": 4,
+          "output": 5
+        }
+      ],
+      "channels": [
+        {
+          "sampler": 0,
+          "target": {
+            "node": 0,
+            "path": "translation"
+          }
+        }
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "name": "default material",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.5,
+          0.5,
+          0.5,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.3288090062081349
+      }
+    }
+  ]
+}
